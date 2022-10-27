@@ -18,8 +18,6 @@
     color: aliceblue;
 }
 
-
-
 .top-center {
     position: absolute;
     top: 80px;
@@ -76,10 +74,9 @@
     color: forestgreen;
 }
 
-h1 {
-    font-size: large;
-}
 
-.navbar-brand {
-    font-weight: 400;
-}
+
+
+
+
+
