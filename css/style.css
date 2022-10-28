@@ -1,82 +1,63 @@
 
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+.navbar a:hover 
+{
+   
+   color: aquamarine;
 }
 
-
-
-.container2 {
-    display: flex;
-    background-color:lightblue;
-    justify-content: space-around;
-    text-align: center;
-    font-size: 80px;
-    text-align: center;
-    color: aliceblue;
+.navbar a.current {
+   color: aquamarine;
 }
 
-.top-center {
-    position: absolute;
-    top: 80px;
-    color: mediumturquoise;
-}
-
-.item2 {
-    display: flex;
-    justify-content: center;
-}
-
-.container3 {
-    display: flex;
-    background-color:lightblue;
-    justify-content: space-around;
-    text-align: center;
-    font-size: 80px;
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-
-}
-
-.img {
-    display: flex;
-    justify-content: center;
-    height:500px;
-    width: 90%;
-    
-}
-
-.container-schedule {
-    display: flex;
-    background-color:white;
-    justify-content: space-around;
-    text-align: center;
-    font-size: 80px;
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-.img2 {
-    display: flex;
-    justify-content: center;
-    height:300px;
-    width: 70%; 
-}
-
-.text1 {
-    display: flex;
-    justify-content: center;
-    font-size: 80px;
-    color: forestgreen;
-}
-
-
-
-
-
-
+body {
+    margin-top: 40px; /* This margin just makes the text easier to read. You can remove it if you want since it can mess with your other styles. */
+  }
+  
+  body::before {
+    content: "XS";
+    color: red;
+    font-size: 2rem;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+  
+  /* This box class is purely used for explaining how the bootstrap grid system works. */
+  .box {
+    background-color: lightblue;
+    border: 1px solid blue;
+    min-height: 50px;
+    font-size: 2rem;
+  }
+  
+  @media (min-width: 576px) {
+    body::before {
+      content: "SM";
+    }
+  }
+  
+  @media (min-width: 768px) {
+    body::before {
+      content: "MD";
+    }
+  }
+  
+  @media (min-width: 992px) {
+    body::before {
+      content: "LG";
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    body::before {
+      content: "XL";
+    }
+  }
+  
+  @media (min-width: 1400px) {
+    body::before {
+      content: "XXL";
+    }
+  }
 
