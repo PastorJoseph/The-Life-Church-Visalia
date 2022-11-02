@@ -1,32 +1,40 @@
 
-  
+ 
+ 
+
+iframe {
+  border: 1px solid black;
+  width: 100%;
+  height: auto;
+}
+
+
   @media (min-width: 576px) {
     body::before {
-      content: "SM";
+     
     }
   }
   
   @media (min-width: 768px) {
     body::before {
-      content: "MD";
-    }
+          }
   }
   
   @media (min-width: 992px) {
     body::before {
-      content: "LG";
+   
     }
   }
   
   @media (min-width: 1200px) {
     body::before {
-      content: "XL";
+    
     }
   }
   
   @media (min-width: 1400px) {
     body::before {
-      content: "XXL";
+   
     }
   }
 
