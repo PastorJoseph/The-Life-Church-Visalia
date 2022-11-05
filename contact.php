@@ -1,26 +1,13 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>The Life Church Visalia</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <!-- <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script> -->
-    <link rel="stylesheet" href="contact-form.css">
-    <link rel="stylesheet" href="contact.php">
-  </head>
-  <body>
-
-  <?php
+<?php
 if (isset($_POST['Email'])) {
 
-    // EDIT THE 2 LINES BELOW AS REQUIRED
+    // EDIT THE FOLLOWING TWO LINES:
     $email_to = "tlc.community@yahoo.com";
     $email_subject = "New form submissions";
 
     function problem($error)
     {
-        echo "We are very sorry, but there were error(s) found with the form you submitted. ";
+        echo "We're sorry, but there were error(s) found with the form you submitted. ";
         echo "These errors appear below.<br><br>";
         echo $error . "<br><br>";
         echo "Please go back and fix these errors.<br><br>";
@@ -33,7 +20,7 @@ if (isset($_POST['Email'])) {
         !isset($_POST['Email']) ||
         !isset($_POST['Message'])
     ) {
-        problem('We are sorry, but there appears to be a problem with the form you submitted.');
+        problem('We're sorry, but there appears to be a problem with the form you submitted.');
     }
 
     $name = $_POST['Name']; // required
@@ -80,42 +67,13 @@ if (isset($_POST['Email'])) {
     @mail($email_to, $email_subject, $email_message, $headers);
 ?>
 
-    <!-- include your success message below -->
+    <!-- INCLUDE YOUR SUCCESS MESSAGE BELOW -->
 
-    Thank you for contacting us. We will be in touch with you very soon.
+    Thanks for getting in touch. We'll get back to you soon.
 
 <?php
 }
 ?>
-
-    
-
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-4 fs-4">
-      <!-- <div class="container" > -->
-        <a href="index.html" class="navbar-brand fs-1 px-4">TLC Visalia</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-          <span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navmenu">
-          <ul class="navbar-nav ms-auto px-5 fs-2">
-          <li class="navbar-item">
-            <a class="nav-link" href="index.html" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="ministries.html" class="nav-link">Ministries</a>
-          </li>
-          <li class="navbar-item">
-            <a href="staff.html" class="nav-link">Staff</a>
-          </li>
-          <li class="navbar-item">
-            <a href="events.html" class="nav-link">Events</a>
-          </li>
-          <li class="navbar-item">
-            <a href="contact.html" class="nav-link">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-   </nav> 
     
     
  
