@@ -1,8 +1,10 @@
-
+h1 {
+  font-size: 100px;
+}
  
  
 
-a {
+/* a {
   text-decoration: none;
 }
 
@@ -34,5 +36,5 @@ a {
     body::before {
    
     }
-  }
+  } */
 
