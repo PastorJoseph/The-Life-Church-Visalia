@@ -1,0 +1,23 @@
+{
+  "name": "the-life-church-visalia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PastorJoseph/The-Life-Church-Visalia.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PastorJoseph/The-Life-Church-Visalia/issues"
+  },
+  "homepage": "https://github.com/PastorJoseph/The-Life-Church-Visalia#readme",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
